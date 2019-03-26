@@ -1,0 +1,36 @@
+<h2>Just Breathe</h2>
+
+<p>by <a href="https://vkumar33.github.io/">Vikas Kumar</a></p>
+
+<p>The idea behind this project is to visualize the air quality of United States and how it has changed in the past 40 years. Data used in this project is taken from the official website of <a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html">United States Environmental Protection Agency</a>.We will use this data to try and find out some interesting trends in air quality of various US counties.
+
+</p>
+
+<p> <a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html/">Data Used</a> 
+
+We have csv files (year wise) which contain air quality information regarding all the US states and counties.
+
+</p>
+
+<h2>Now lets go over various tabs of this project</h2>
+<p></p>
+
+	<h3>AQI Quality</h3>
+    <p>In this part of the project, we visualize the air quality of any US county using Line graphs, bar graphs and pie charts. On the left side of the sidebar we first select the year and then the state and its corresponding county for which we want to plot the graphs. 1st we have a table which displays the AQI quality (in no of days) for that county in that particular year. 2nd we have a line chart which displays the Maximum AQI , median AQI and 90th percentile of AQI over the past 40 years. Then we have a pie chart which displays the percentage of good, moderate, Unhealthy, Unhealthy (for sensitive people), Very unhealthy and hazardous days for that county in that particular year. And lastly we have a bar graph which shows the same thing but it displays the no of days instead of percentage of days. </p>
+    <p></p>
+
+    <h3>Pollutant Types</h3>
+    <p>In here we visualize the types of pollutants of any US county using Line graph, bar graph and pie chart. We also have a map which pin points the location of that particular county in the world map. We have different types of pollutants like CO, NO2, Ozone, PM 2.5, PM 10 and SO2 which we try to plot the percentage of, for each county in a particular year. </p>
+
+
+    <p></p>
+    <h3>Some interesting trends</h3>
+    <p>While we have a vast amount of information, it sometimes can be overwhelming. But the line chart under pollutant types helps in simplifying those trends. If we take a close look into the pollutant types for Cook county of Illinois over the past 40 years we can see that the amount of SO2 in the air has decreased dramatically whereas the amount of PM 2.5 has increased drastically. Also the compare data tab can be quite useful in comparing the air quality of 3 counties all at once.  </p>
+
+
+
+
+<h3>Application</h3>
+
+<p>This application is written in R using Shiny dashboard framework. All the graphs were made using ggplot2 and plotly libraries. Graphs were made more interactive using hovering feature of Plotly library</p>
+
